@@ -7,7 +7,7 @@ var buffer = fs.readFileSync( 'index.html' );
 
 var welcome = buffer.toString();
 
-p.get('/', function(request, response) {
+app.get('/', function(request, response) {
   response.send( welcome );
 });
 
